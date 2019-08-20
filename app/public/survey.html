@@ -11,7 +11,146 @@
     <h1 class=title>Survey Questions</h1>
     <hr>
     <h2 class=title2>About You</h2>
-    
+    <form class="aboutYou">
+        <h3 class="title3">Name (Required)</h3>
+        <input type="text" class="aboutName" placeholder="Your name here..." id="aboutName" required="required" oninvalid="this.setCustomValidity('Your name is required!')">
+    </form>
+    <form class="aboutPic">
+        <h3 class="title3">Link to Photo Image (Required)</h3>
+        <input type="text" class="aboutImage" placeholder="Picture link here..." id="aboutImage" required="required" oninvalid="this.setCustomValidity('Please provide a link to your picture!')">
+    </form>
+
+    <div class="questionForm">
+        <h4 class="questionTitle">Question 1</h4>
+        <h class="question">People would consider you as friendly.</h>
+        <select id=question1>
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3 (Neither Agree or Disagree)</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+    </div>
+
+    <div class="questionForm">
+        <h4 class="questionTitle">Question 2</h4>
+        <h class="question">You can control your temper.</h>
+        <select id=question2>
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3 (Neither Agree or Disagree)</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+    </div>
+
+    <div class="questionForm">
+        <h4 class="questionTitle">Question 3</h4>
+        <h class="question">You can resist the temptation to stalk others.</h>
+        <select id=question3>
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3 (Neither Agree or Disagree)</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+    </div>
+
+    <div class="questionForm">
+        <h4 class="questionTitle">Question 4</h4>
+        <h class="question">You are comfortable talking to strangers.</h>
+        <select id=question4>
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3 (Neither Agree or Disagree)</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+    </div>
+
+    <div class="questionForm">
+        <h4 class="questionTitle">Question 5</h4>
+        <h class="question">You are approchable.</h>
+        <select id=question5>
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3 (Neither Agree or Disagree)</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+    </div>
+
+    <div class="questionForm">
+        <h4 class="questionTitle">Question 6</h4>
+        <h class="question">You are a great problem solver.</h>
+        <select id=question6>
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3 (Neither Agree or Disagree)</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+    </div>
+
+    <div class="questionForm">
+        <h4 class="questionTitle">Question 7</h4>
+        <h class="question">You enjoy thinking outside of the box.</h>
+        <select id=question7>
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3 (Neither Agree or Disagree)</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+    </div>
+
+    <div class="questionForm">
+        <h4 class="questionTitle">Question 8</h4>
+        <h class="question">You are comfortable around others.</h>
+        <select id=question8>
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3 (Neither Agree or Disagree)</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+    </div>
+
+    <div class="questionForm">
+        <h4 class="questionTitle">Question 9</h4>
+        <h class="question">You enjoy working in teams.</h>
+        <select id=question9>
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3 (Neither Agree or Disagree)</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+    </div>
+
+    <div class="questionForm">
+        <h4 class="questionTitle">Question 10</h4>
+        <h class="question">You are optimistic.</h>
+        <select id=question10>
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3 (Neither Agree or Disagree)</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+    </div>
+
+    <div class="submit" id="submit">Submit</div>
 </body>
 
 </html>
