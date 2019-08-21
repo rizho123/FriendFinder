@@ -6,7 +6,7 @@ module.exports = function (app) {
         res.json(friends)
     });
 
-    app.post("/api/friends"), function(req, res) {
+    app.post("/api/friends", function(req, res) {
         var input = req.body;
         var responses = input.scores;
 
@@ -16,7 +16,7 @@ module.exports = function (app) {
 
         for (var i in friends) {
             var diff = 0;
-            for (var j in response) {
+            for (var j in responses) {
                 diff += Math.abs(friends[i].scores[j] - responses[j]);
             }
 
@@ -28,5 +28,5 @@ module.exports = function (app) {
         }
         friends.push(input);
         res.json({status: "OK", matchN: matchN, matchI: matchI})
-    }
+    })
 }
