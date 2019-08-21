@@ -6,6 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>FriendFinder - Survey</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="script.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 </head>
 <body>
     <h1 class=title>Survey Questions</h1>
@@ -24,7 +29,6 @@
         <h4 class="questionTitle">Question 1</h4>
         <h class="question">People would consider you as friendly.</h>
         <select id=question1>
-            <option value=""></option>
             <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2</option>
             <option value="3">3 (Neither Agree or Disagree)</option>
@@ -37,7 +41,6 @@
         <h4 class="questionTitle">Question 2</h4>
         <h class="question">You can control your temper.</h>
         <select id=question2>
-            <option value=""></option>
             <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2</option>
             <option value="3">3 (Neither Agree or Disagree)</option>
@@ -50,7 +53,6 @@
         <h4 class="questionTitle">Question 3</h4>
         <h class="question">You can resist the temptation to stalk others.</h>
         <select id=question3>
-            <option value=""></option>
             <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2</option>
             <option value="3">3 (Neither Agree or Disagree)</option>
@@ -63,7 +65,6 @@
         <h4 class="questionTitle">Question 4</h4>
         <h class="question">You are comfortable talking to strangers.</h>
         <select id=question4>
-            <option value=""></option>
             <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2</option>
             <option value="3">3 (Neither Agree or Disagree)</option>
@@ -76,7 +77,6 @@
         <h4 class="questionTitle">Question 5</h4>
         <h class="question">You are approchable.</h>
         <select id=question5>
-            <option value=""></option>
             <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2</option>
             <option value="3">3 (Neither Agree or Disagree)</option>
@@ -89,7 +89,6 @@
         <h4 class="questionTitle">Question 6</h4>
         <h class="question">You are a great problem solver.</h>
         <select id=question6>
-            <option value=""></option>
             <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2</option>
             <option value="3">3 (Neither Agree or Disagree)</option>
@@ -102,7 +101,6 @@
         <h4 class="questionTitle">Question 7</h4>
         <h class="question">You enjoy thinking outside of the box.</h>
         <select id=question7>
-            <option value=""></option>
             <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2</option>
             <option value="3">3 (Neither Agree or Disagree)</option>
@@ -115,7 +113,6 @@
         <h4 class="questionTitle">Question 8</h4>
         <h class="question">You are comfortable around others.</h>
         <select id=question8>
-            <option value=""></option>
             <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2</option>
             <option value="3">3 (Neither Agree or Disagree)</option>
@@ -128,7 +125,6 @@
         <h4 class="questionTitle">Question 9</h4>
         <h class="question">You enjoy working in teams.</h>
         <select id=question9>
-            <option value=""></option>
             <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2</option>
             <option value="3">3 (Neither Agree or Disagree)</option>
@@ -141,7 +137,6 @@
         <h4 class="questionTitle">Question 10</h4>
         <h class="question">You are optimistic.</h>
         <select id=question10>
-            <option value=""></option>
             <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2</option>
             <option value="3">3 (Neither Agree or Disagree)</option>
@@ -150,7 +145,19 @@
         </select>
     </div>
 
-    <div class="submit" id="submit">Submit</div>
+    <hr>
+
+    <div class="submitDiv" id="submitDiv">
+        <a>
+            <button id="submitButton">Submit Survey</button>
+        </a>
+    </div>
+
+    <div>
+        <h id="matchName"></h>
+        <img id="matchPicture" src="">
+    </div>
+
 </body>
 
 </html>
