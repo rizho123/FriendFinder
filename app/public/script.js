@@ -26,13 +26,13 @@ $("#submitButton").on("click", function (event) {
     var URL = window.location.origin
     console.log(URL)
     console.log("here1")
-    $.post(URL + 'api/friends', userResponse, function(data) {
+    $.post(URL + '/api/friends', userResponse).then(function(response) {
         console.log("here2")
         console.log(userResponse)
-        $("#matchName").text(data.matchN);
-        $("#matchPicture").attr("src", data.matchI);
-        console.log(data)
-        console.log(data.matchN)
-        console.log(data.matchI)
+        $("#matchName").text(response.matchN);
+        $("#matchPicture").attr("src", response.matchI);
+        console.log(response)
+        console.log(response.matchN)
+        console.log(response.matchI)
     })
 })
