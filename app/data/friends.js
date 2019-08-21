@@ -20,7 +20,7 @@ var friendsArray = [
         scores: ["2", "2", "2", "2", "2", "2", "2", "2", "2", "2"]
     },
     {
-        name: "A Potato",
+        name: "a Potato",
         photo: "https://d2lnr5mha7bycj.cloudfront.net/product-image/file/large_2b4807ba-5b1e-47a3-92e3-e71e51cd221c.jpg",
         scores: ["3", "3", "3", "3", "3", "3", "3", "3", "3", "3"]
     }

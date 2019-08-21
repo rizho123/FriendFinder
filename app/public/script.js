@@ -1,5 +1,6 @@
 $("#submitButton").on("click", function () {
     $("#matchName").text("");
+    $("#matchName").removeClass("matchNameActive");
     $("#matchPicture").attr("src", "");
     console.log("clicked")
     if ($("#aboutName").val() === "" || $("#aboutImage").val() === "") {
@@ -9,7 +10,7 @@ $("#submitButton").on("click", function () {
     .val() === "" || $("#question4").val() === "" || $("#question5").val() === "" ||
     $("#question6").val() === "" || $("#question7").val() === "" || $("#question8").val() ===
     "" || $("#question9").val() === "" || $("#question10").val() === "") {
-        $("#matchName").text("Please select a value for ALL questions!")
+        $("#matchName").text("Please answer ALL of the questions!")
         return;
     }
 
@@ -36,7 +37,8 @@ $("#submitButton").on("click", function () {
     $.post(URL + '/api/friends', userResponse, function(data) {
         console.log("here2")
         console.log(userResponse)
-        $("#matchName").text(data.matchN);
+        $("#matchName").text("Your best friend is " + data.matchN + "!");
+        $("#matchName").addClass("matchNameActive");
         $("#matchPicture").attr("src", data.matchI);
         console.log(data)
         console.log(data.matchN)
