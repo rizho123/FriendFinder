@@ -4,6 +4,18 @@ body {
     background-attachment: fixed;
 }
 
+.container, footer {
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.container {
+    margin-top: 5%;
+    border-radius: 10px;
+    background-color: #bbbbbb5d;
+    padding: 5%;
+}
+
 #matchPicture {
     width: 100%;
     max-width: 400px;
@@ -19,24 +31,23 @@ button {
     border-radius: 4px;
 }
 
-#submit {
+#surveyButton {
     font-family: Arial, Helvetica, sans-serif;
     color: #ffffff;
     padding: 6px 15px;
     border-radius: 15px;
     /* background-color: #6d4100; */
-    background-image: linear-gradient(to right, #6253e1, #852D91, #A3A1FF, #F24645);
+    background-image: linear-gradient(to right, #e153ce, #852D91, rgb(211, 68, 255), rgb(230, 51, 51));
     box-shadow: 0 4px 15px 0 rgba(126, 52, 161, 0.75);
     font-size: 15px;
     transition: 0.5s;
     position: relative;
     bottom: -8px;
     height: 36px;
-    margin-left: -76px;
     border: 0.5px solid grey;
 }
 
-#submit {
+#surveyButton {
     /* box-shadow: 0 0 7px #008cff; */
     color: #fff;
     cursor: pointer;
@@ -48,15 +59,49 @@ button {
     transition: all .4s ease-in-out;
 }
 
-#submit:hover {
+#surveyButton:hover {
     background-position: 100% 0;
     -o-transition: all .4s ease-in-out;
     -webkit-transition: all .4s ease-in-out;
     transition: all .4s ease-in-out;
 }
 
-#submit:active {
+#surveyButton:active {
     text-shadow: 0 0 7px #00ffc8;
     color: #00576d;
     box-shadow: 0 0 7px #00ffc8;
+}
+
+.homeTitle {
+    font-size: 4vw;
+}
+
+footer {
+    margin-top: 3%;
+    margin-left: 23%;
+}
+
+.fancybox-slide--iframe .fancybox-content {
+    width  : 800px;
+    height : 600px;
+    max-width  : 80%;
+    max-height : 80%;
+    margin: 0;
+}
+
+input, select {
+    border: 1px solid #8b8b8b88;
+    outline: none;
+    border-radius: 3px;
+    transition: 0.5s;
+}
+
+input:hover, select:hover {
+    transition: 0.5s;
+    box-shadow: 0 0 0 3px #00c3ff52;
+    cursor: pointer;
+}
+
+input:focus, select:focus {
+    box-shadow: 0 0 0 3px #a5ff3f79;
 }
