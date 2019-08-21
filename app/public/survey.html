@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="script.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
     <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 </head>
@@ -148,16 +147,18 @@
     <hr>
 
     <div class="submitDiv" id="submitDiv">
-        <a>
+        <a data-fancybox data-src="#matchResults" href="javascript:;">
             <button id="submitButton">Submit Survey</button>
         </a>
     </div>
 
-    <div>
+    <div style="display: none;" id="matchResults">
         <h id="matchName"></h>
         <img id="matchPicture" src="">
     </div>
 
+    <script type="text/javascript" src="script.js"></script>
+    
 </body>
 
 </html>
