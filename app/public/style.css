@@ -1,5 +1,62 @@
+body {
+    font-family: Molengo;
+    background-image: url("./images/ep_naturalwhite.png");
+    background-attachment: fixed;
+}
+
 #matchPicture {
     width: 100%;
     max-width: 400px;
 }
 
+button:focus, input:focus, a:focus {
+    outline: none;
+}
+
+button {
+    border: none;
+    padding: 9px;
+    border-radius: 4px;
+}
+
+#submit {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    padding: 6px 15px;
+    border-radius: 15px;
+    /* background-color: #6d4100; */
+    background-image: linear-gradient(to right, #6253e1, #852D91, #A3A1FF, #F24645);
+    box-shadow: 0 4px 15px 0 rgba(126, 52, 161, 0.75);
+    font-size: 15px;
+    transition: 0.5s;
+    position: relative;
+    bottom: -8px;
+    height: 36px;
+    margin-left: -76px;
+    border: 0.5px solid grey;
+}
+
+#submit {
+    /* box-shadow: 0 0 7px #008cff; */
+    color: #fff;
+    cursor: pointer;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+#submit:hover {
+    background-position: 100% 0;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+#submit:active {
+    text-shadow: 0 0 7px #00ffc8;
+    color: #00576d;
+    box-shadow: 0 0 7px #00ffc8;
+}
