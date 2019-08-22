@@ -37,8 +37,8 @@ $("#submitButton").on("click", function () {
     $.post(URL + '/api/friends', userResponse, function(data) {
         console.log("here2")
         console.log(userResponse)
-        $("#matchName").text("Your best friend is " + data.matchN + "!");
-        $("#matchName").addClass("matchNameActive");
+        $("#matchName").html("Your <span id='best'>BEST FRIEND</span> is " + data.matchN + "!");
+        $("#matchName").addClass("matchNameActive")
         $("#matchPicture").attr("src", data.matchI);
         console.log(data)
         console.log(data.matchN)

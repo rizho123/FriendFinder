@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Friend Finder - Survey</title>
-    <link rel="stylesheet" href="style.css">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
     <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Baloo|Indie+Flower|Francois+One|Molengo|Monoton|Righteous|Rubik+Mono+One|Staatliches&display=swap" rel="stylesheet">
     <link rel="icon" href="">
 </head>
@@ -20,16 +20,16 @@
     <h2 class=title2>About You</h2>
     <form class="aboutYou">
         <h3 class="title3">Name (Required)</h3>
-        <input type="text" class="aboutName" placeholder="Your name here..." id="aboutName" required="required" oninvalid="this.setCustomValidity('Your name is required!')">
+        <input type="text" class="aboutField" placeholder="Your name here..." id="aboutName" required="required" oninvalid="this.setCustomValidity('Your name is required!')">
     </form>
     <form class="aboutPic">
         <h3 class="title3">Link to Photo Image (Required)</h3>
-        <input type="text" class="aboutImage" placeholder="Picture link here..." id="aboutImage" required="required" oninvalid="this.setCustomValidity('Please provide a link to your picture!')">
+        <input type="text" class="aboutField" placeholder="Picture link here..." id="aboutImage" required="required" oninvalid="this.setCustomValidity('Please provide a link to your picture!')">
     </form>
-
+    <hr>
     <div class="questionForm">
         <h4 class="questionTitle">Question 1</h4>
-        <h class="question">People would consider you as friendly.</h>
+        <h class="question">People would consider you as friendly.</h><br>
         <select id=question1 class="question">
             <option value="">Select a value...</option>
             <option value="1">1 (Strongly Disagree)</option>
@@ -42,7 +42,7 @@
 
     <div class="questionForm">
         <h4 class="questionTitle">Question 2</h4>
-        <h class="question">You can control your temper.</h>
+        <h class="question">You can control your temper.</h><br>
         <select id=question2 class="question">
             <option value="">Select a value...</option>
             <option value="1">1 (Strongly Disagree)</option>
@@ -55,7 +55,7 @@
 
     <div class="questionForm">
         <h4 class="questionTitle">Question 3</h4>
-        <h class="question">You can resist the temptation to stalk others.</h>
+        <h class="question">You can resist the temptation to stalk others.</h><br>
         <select id=question3 class="question">
             <option value="">Select a value...</option>
             <option value="1">1 (Strongly Disagree)</option>
@@ -68,7 +68,7 @@
 
     <div class="questionForm">
         <h4 class="questionTitle">Question 4</h4>
-        <h class="question">You are comfortable talking to strangers.</h>
+        <h class="question">You are comfortable talking to strangers.</h><br>
         <select id=question4 class="question">
             <option value="">Select a value...</option>
             <option value="1">1 (Strongly Disagree)</option>
@@ -81,7 +81,7 @@
 
     <div class="questionForm">
         <h4 class="questionTitle">Question 5</h4>
-        <h class="question">You are approchable.</h>
+        <h class="question">You are approchable.</h><br>
         <select id=question5 class="question">
             <option value="">Select a value...</option>
             <option value="1">1 (Strongly Disagree)</option>
@@ -94,7 +94,7 @@
 
     <div class="questionForm">
         <h4 class="questionTitle">Question 6</h4>
-        <h class="question">You are a great problem solver.</h>
+        <h class="question">You are a great problem solver.</h><br>
         <select id=question6 class="question">
             <option value="">Select a value...</option>
             <option value="1">1 (Strongly Disagree)</option>
@@ -107,7 +107,7 @@
 
     <div class="questionForm">
         <h4 class="questionTitle">Question 7</h4>
-        <h class="question">You enjoy thinking outside of the box.</h>
+        <h class="question">You enjoy thinking outside of the box.</h><br>
         <select id=question7 class="question">
             <option value="">Select a value...</option>
             <option value="1">1 (Strongly Disagree)</option>
@@ -120,7 +120,7 @@
 
     <div class="questionForm">
         <h4 class="questionTitle">Question 8</h4>
-        <h class="question">You are comfortable around others.</h>
+        <h class="question">You are comfortable around others.</h><br>
         <select id=question8 class="question">
             <option value="">Select a value...</option>
             <option value="1">1 (Strongly Disagree)</option>
@@ -133,7 +133,7 @@
 
     <div class="questionForm">
         <h4 class="questionTitle">Question 9</h4>
-        <h class="question">You enjoy working in teams.</h>
+        <h class="question">You enjoy working in teams.</h><br>
         <select id=question9 class="question">
             <option value="">Select a value...</option>
             <option value="1">1 (Strongly Disagree)</option>
@@ -146,7 +146,7 @@
 
     <div class="questionForm">
         <h4 class="questionTitle">Question 10</h4>
-        <h class="question">You are optimistic.</h>
+        <h class="question">You are optimistic.</h><br>
         <select id=question10 class="question">
             <option value="">Select a value...</option>
             <option value="1">1 (Strongly Disagree)</option>
@@ -166,7 +166,7 @@
         </a>
     </div>
 
-    <div style="display: none;" id="matchResults">
+    <div style="display: none;" id="matchResults" class="matchResults">
         <h id="matchName"></h>
         <br>
         <img id="matchPicture" src="">

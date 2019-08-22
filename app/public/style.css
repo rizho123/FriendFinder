@@ -1,7 +1,15 @@
 body {
     font-family: Molengo;
-    background-image: url("./images/ep_naturalwhite.png");
+    background-image: url("./images/topography.png");
     background-attachment: fixed;
+}
+
+.smallDivider {
+    color: #00000077;
+}
+
+footer:hover {
+    cursor: default;
 }
 
 .container, footer {
@@ -13,30 +21,57 @@ body {
     margin-top: 5%;
     border-radius: 10px;
     background-color: #bbbbbb5d;
+    box-shadow: 0 0 8px #bbbbbb5d;
     padding: 5%;
 }
 
 .container2 {
-    padding-left: 2%;
+    margin: 1%;
+    padding: 2%;
+    border-radius: 10px;
+    background-color: #bbbbbb5d;
+    box-shadow: 0 0 8px #bbbbbb5d;
+}
+
+.title {
+    margin-top: 0;
+    text-shadow: 0 0 3px #57575765;
+}
+
+.title3 {
+    font-weight: normal;
+    margin-bottom: 5px;
+}
+
+.aboutField {
+    margin-bottom: 1%;
+    padding-left: 1%;
 }
 
 #matchPicture {
     width: 100%;
-    max-width: 400px;
-    border-radius: 7px;
+    max-width: 550px;
+    border-radius: 10px;
     object-fit: cover;
     border: 1px solid #58585880;
     box-shadow: 1px 1px 7px #00000081;
     margin-top: 5%;
 }
 
-.matchNameActive {
-    font-size: 30px;
+#best {
+    font-size: 55px;
     background: url("./images/congratz.gif");
-    background-position: center;
-    background-size: 20%;
+    background-position: inherit;
+    background-size: 70%;
     -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.matchNameActive {
+    font-size: 34px;
+    text-align: center;
     font-weight: 900;
+    text-shadow: 0 0 5px #ffffff41;
 }
 
 button:focus, input:focus, a:focus {
@@ -85,9 +120,9 @@ button {
 }
 
 #surveyButton:active, #submitButton:active {
-    text-shadow: 0 0 7px #00ffc8;
-    color: #00576d;
-    box-shadow: 0 0 7px #00ffc8;
+    color: #ffffff;
+    text-shadow: 0 0 7px #000000;
+    box-shadow: 0 0 7px #000000;
 }
 
 #submitButton {
@@ -112,20 +147,30 @@ footer {
     margin: 0;
 }
 
+.fancybox-content {
+    background-image: url("./images/pink_dust.png");
+}
+
 input, select {
     border: 1px solid #8b8b8b88;
     outline: none;
     border-radius: 3px;
     transition: 0.5s;
+    background-color: #ffffffb9;
+    font-family: Molengo;
+}
+
+select {
+    margin-top: 1%;
 }
 
 input:hover, select:hover {
     transition: 0.5s;
-    box-shadow: 0 0 0 3px #00c3ff52;
+    box-shadow: 0 0 5px 5px #6200ff52, 0 0 0 3px #6200ff52;
     cursor: pointer;
 }
 
 input:focus, select:focus {
-    box-shadow: 0 0 0 3px #a5ff3f79;
+    box-shadow: 0 0 5px 3px #ff3f7979, 0 0 0 1px #ff3c7669;
 }
 
