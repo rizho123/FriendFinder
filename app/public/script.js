@@ -2,14 +2,19 @@ $("#submitButton").on("click", function () {
     $("#matchName").text("");
     $("#matchName").removeClass("matchNameActive");
     $("#matchPicture").attr("src", "");
+    $(".matchResults").removeClass("matchBg")
     console.log("clicked")
     if ($("#aboutName").val() === "" || $("#aboutImage").val() === "") {
+        $(".matchResults").addClass("matchAlert")
+        $("#matchName").addClass("matchNameAlert")
         $("#matchName").text("Name or Picture field cannot be left blank!")
         return;
     } else if ($("#question1").val() === "" || $("#question2").val() === "" || $("#question3")
     .val() === "" || $("#question4").val() === "" || $("#question5").val() === "" ||
     $("#question6").val() === "" || $("#question7").val() === "" || $("#question8").val() ===
     "" || $("#question9").val() === "" || $("#question10").val() === "") {
+        $(".matchResults").addClass("matchAlert")
+        $("#matchName").addClass("matchNameAlert")
         $("#matchName").text("Please answer ALL of the questions!")
         return;
     }
@@ -37,6 +42,9 @@ $("#submitButton").on("click", function () {
     $.post(URL + '/api/friends', userResponse, function(data) {
         console.log("here2")
         console.log(userResponse)
+        $(".matchResults").removeClass("matchAlert")
+        $(".matchResults").addClass("matchBg")
+        $("#matchName").removeClass("matchNameAlert")
         $("#matchName").html("Your <span id='best'>BEST FRIEND</span> is " + data.matchN + "!");
         $("#matchName").addClass("matchNameActive")
         $("#matchPicture").attr("src", data.matchI);
