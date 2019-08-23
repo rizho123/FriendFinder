@@ -1,5 +1,6 @@
 # FriendFinder
-##### Find your next best friend using this simple app!
+##### Find your next best friend using this simple app! 
+##### [Check out the live version!](https://friendfinder-rz.herokuapp.com/ "Find your BFF!")
 <img width = 950 src = "https://github.com/rizho123/FriendFinder/blob/master/app/public/images/previews/title.PNG?raw=true">
 
 ## Survey
